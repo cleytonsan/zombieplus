@@ -1,0 +1,11 @@
+pipeline{
+    agente any
+    stages {
+        stage('build') {
+            sh "npm_install"
+        }
+        stage('testes') {
+            sh ('npm_install')
+        }
+    }
+}
