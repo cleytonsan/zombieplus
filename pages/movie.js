@@ -22,7 +22,7 @@ var createActions = {
                 .setValue('@castInput', actor)
                 .api.keys(browser.api.Keys.TAB)
         })
-        return this
+        return this.pause(1000)
     },
     // faz o upload da foto
     uploadCover: function(fileName) {
