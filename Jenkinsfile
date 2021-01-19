@@ -13,10 +13,13 @@ pipeline{
         }
         stage('Tests') {
             steps {
-                sh "npm run test:ci"
-                junit testResults: "ls tests_output/**/*.xml"
+                sh "npm run test:ci"    
             }
-            
+            post {
+                always {
+                    junit testResults: "ls tests_output/**/*.xml"
+                }
+            }
         }
     }
 }
