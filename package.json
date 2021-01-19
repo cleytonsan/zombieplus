@@ -26,7 +26,7 @@
     "babel-cli": "^6.26.0",
     "babel-plugin-add-module-exports": "^1.0.4",
     "babel-preset-es2015": "^6.24.1",
-    "chromedriver": "^87.0.5",
+    "chromedriver": "^87.0.7",
     "faker": "^5.1.0",
     "geckodriver": "^1.21.1",
     "nightwatch": "^1.5.1",
