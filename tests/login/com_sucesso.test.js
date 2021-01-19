@@ -12,6 +12,10 @@ module.exports = {
         login.with('cleyton@qa.com.br', 'pwd123')
         // barra lateral quando acessa a pagina
         sidebar.expectLoggedUser('cleyton')
-    },
+
+        
+    }
+
+    
     
 }

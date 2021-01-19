@@ -7,7 +7,12 @@ module.exports = {
 
     // após cada acesso a pagina faz o termino
     afterEach: (browser, done) => {
-        browser.end()
+        const faker = require('faker')
+
+        let shotPath = `./tests_output/screenshots/${faker.random.uuid()}.png`
+        browser
+            .saveScreenshot(shotPath)
+            .end()
         done();
     },
 }
