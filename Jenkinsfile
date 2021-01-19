@@ -6,12 +6,12 @@ pipeline{
         }
     }
     stages {
-        stage('build') {
+        stage('Build') {
             steps {
                 sh "npm install"
             }
         }
-        stage('tests') {
+        stage('Tests') {
             steps {
                 sh "npm run test:ci"
                 junit testResults: "ls tests_output/**/*.xml"
