@@ -24,6 +24,13 @@ module.exports = {
   //   workers: 4
   // },
 
+  screenshots: {
+    enabled: true,
+    on_failure: true,
+    on_error: true,
+    path: 'tests_output/'
+  },
+
   // configuração de onde pretende navegar para executar o teste
   test_settings: {
     default: {
