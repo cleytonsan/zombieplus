@@ -60,7 +60,7 @@ module.exports = {
         browserName : "chrome",
         chromeOptions: {
           w3c: false,
-          // args: ['--headless', '--no-sandbox', '--disable-dev-shm-usage']
+          args: ['--headless', '--no-sandbox', '--disable-dev-shm-usage']
         }
       }
     },
