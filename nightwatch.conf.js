@@ -76,7 +76,11 @@ module.exports = {
       },
       desiredCapabilities: {
         browserName : "firefox",
-        acceptIsecureCerts: true
+        acceptIsecureCerts: true,
+        chromeOptions: {
+          w3c: false,
+          args: ['--headless', '--no-sandbox', '--disable-dev-shm-usage']
+        }
       }
     },
 
